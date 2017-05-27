@@ -1,0 +1,8 @@
+<h1>listado de zonas</h1>
+
+<ul>
+{% for dato in datos %}
+    <li>
+    <a href="{{asset('zona/detalle')}}/{{dato.id}}" title="{{dato.nomzona}}">{{ dato.nomzona }}</a>
+    {%endfor%}
+</ul>

@@ -1,0 +1,92 @@
+<!Doctype html>
+
+<html>
+  <head>
+    <title>Curso de Materialize </title>
+    <link rel="stylesheet" href="{{ asset('public/css/materialize.min.css')}}">
+
+
+  </head>
+  <body>
+    <div  ><!--ajusta el contenido del la pagina -->
+     <div class="row">
+   <nav class="grey darken-2" >
+    <div class="nav-wrapper ">
+     <a href="#" class="brand-logo"><img src="{{ asset('public/Img/imagen2.jpg')}}" width="65" height="65" class="responsive-img circle"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{{ path ('control') }}"> Iniciar Seccion</a></li>
+        <li><a href="badges.html">Registrarte</a></li>
+        <li><a href+="collapsible.html">Acerca de </a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="Control.html.twig">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    
+     <img src="{{asset('public/Img/imagen2.jpg')}}">
+     </div>
+    <div class="nav-content">
+     
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{{ asset('public/Img/imagen6.jpg')}}" class="responsive-img"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{{ asset('public/Img/images8.jpg')}}"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{{ asset('public/Img/images7.jpg')}}"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{{ asset('public/Img/images9.jpg')}}"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    
+  
+  </div>
+  
+        
+      </div><!--Cierra el row-->
+ </body>
+
+</html> 
+      
+    <!--Se adjuntan los archivos JS-->
+    <script type="application/javascript" src="{{ asset('public/js/jquery.min.js') }}"></script>
+    <script type="application/javascript" src="{{ asset('public/js/materialize.min.js') }}"></script>
+    <script>
+    $(document).ready(function(){
+    $('.slider').slider();
+
+    });
+       
+    </script>
+ 
+

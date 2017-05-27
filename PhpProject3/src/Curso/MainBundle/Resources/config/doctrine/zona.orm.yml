@@ -1,0 +1,17 @@
+Curso\MainBundle\Entity\zona:
+    type: entity
+    table: null
+    repositoryClass: Curso\MainBundle\Entity\zonaRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        idzona:
+            type: string
+            length: '100'
+        nomzona:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }

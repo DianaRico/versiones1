@@ -1,0 +1,20 @@
+Curso\MainBundle\Entity\usuarios:
+    type: entity
+    table: null
+    repositoryClass: Curso\MainBundle\Entity\usuariosRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        usuario:
+            type: string
+            length: '100'
+        correo:
+            type: string
+            length: '100'
+        pass:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }

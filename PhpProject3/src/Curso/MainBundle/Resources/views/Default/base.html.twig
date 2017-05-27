@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}ITR CURSO{% endblock %}</title>
+        {% block stylesheets %}
+           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('public/css/materialize.min.css')}}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block head %}
+            <div>
+                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#acolapsar">
+                                <span class="sr-only">Toogle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="{{ path('Inicio') }}" class="navbar-brand">Inicio</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="acolapsar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="{{ path('Bitacora') }}">Bitacora</a></li>
+                                <li><a href="{{ path('Clasificacion') }}">Clasificación</a></li>
+                                <li><a href="{{ path('Productos') }}">Productos</a></li>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b><span class="glyphicon glyphicon-user"></span>Usuario</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{{ path('Salir') }}">Cerrar sesión</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        {% endblock %}
+        {% block body %}
+            <div id="contenido" style="margin-top: 5%;">
+                {% block contenido %}
+
+                {% endblock %}
+            </div>
+        {% endblock %}
+        {% block footer %}
+            <footer class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                    <div class="ajs-footer">
+                        <p align="center" style="color: #FFFFFF;">Copyright &copy; 2017 ITROQUE S.A de C.V. All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+        {% block javascripts %}
+            <script type="application/javascript" src="{{ asset('public/js/jquery.min.js') }}"></script>
+<script type="application/javascript" src="{{ asset('public/js/materialize.min.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

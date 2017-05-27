@@ -1,0 +1,77 @@
+
+<!Doctype html>
+
+<html>
+  <head>
+    <title>Registro </title>
+ 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('public/css/materialize.min.css')}}">
+
+
+  </head>
+  <body>
+    <div ><!--ajusta el contenido del la pagina -->
+     <div class="row">
+    <nav class="grey darken-2" >
+    <div class="nav-wrapper ">
+     <a href="#" class="brand-logo"><img src="{{ asset('public/Img/imagen2.jpg')}}" width="65" height="65" class="responsive-img circle"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="#" class="brand-logo center" >Cita Medica por internet</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+ 
+      <li> Usuario:<span class="label">{{app.session.get('nombre')}}</span></li>
+      <li><a href="{{path('salir')}}">Cerrar Seccion</a></li>
+      <li><a href="{{path('formulario')}}">Formularios</a></li><!--en este se listaran todos lso form para ser editados-->
+       <li><a href="collapsible.html"></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="Control.html.twig">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    
+    
+    <div class="nav-content">
+     
+    </div>
+  </nav>
+
+   </body>
+       <table class="striped" aling="center">
+        <thead>
+          <tr>
+              <th>Formularios</th>
+              <th>Acccion</th>
+              <th>Reporte</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Afiliados</td>
+             <td><a href="{{path('afiliado')}}">Editar</a></td>
+
+            
+            <td>Reporte</td>
+          </tr>
+          <tr>
+            <td>Medicos</td>
+           <td><a href="{{path('afiliado')}}">Editar</a></td>
+            <td>Reporte</td>
+          </tr>
+          <tr>
+            <td>Instituciones</td>
+            <td><a href="{{path('afiliado')}}">Editar</a></td>
+            <td>Reporte</td>
+          </tr>
+          <tr>
+            <td>Zona</td>
+            <td><a href="{{path('afiliado')}}">Editar</a></td>
+            <td>Reporte</td>
+          </tr>
+        </tbody>
+      </table>
+
+</html>

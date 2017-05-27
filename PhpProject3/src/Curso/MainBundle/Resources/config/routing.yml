@@ -1,0 +1,53 @@
+Principal:
+    path:  /Principal
+    defaults: { _controller: CursoMainBundle:Default:principal }
+    
+inicio:
+    path:  /inicio
+    defaults: { _controller: CursoMainBundle:Default:inicio }
+control:
+    path:  /control
+    defaults: { _controller: CursoMainBundle:Default:control }
+index:
+    path:  /index
+    defaults: { _controller: CursoMainBundle:Default:index }
+salir:
+    path:  /salir
+    defaults: { _controller: CursoMainBundle:Default:salir }
+
+formulario:
+    path:  /formulario
+    defaults: { _controller: CursoMainBundle:Default:formulario }
+
+afiliado:
+    path:  /afiliado
+    defaults: { _controller: CursoMainBundle:Default:afiliado}
+
+zona:
+    path:  /zona
+    defaults: { _controller: CursoMainBundle:Default:zona }
+    
+prueba_detalle:
+    path:  /zona/detalle/{id}
+    defaults: { _controller: CursoMainBundle:Default:detalle }
+FormZona:
+    path:  /formzona
+    defaults: { _controller: CursoMainBundle:Default:formzona }
+
+
+prueba_create:
+    path:  /zona/add
+    defaults: { _controller: CursoMainBundle:Default:create }
+prueba_update:
+    path:  /zona/edit/{id}
+    defaults: { _controller: CursoMainBundle:Default:update }
+          
+prueba_delete:
+    path:  /zona/delete/{id}
+    defaults: { _controller: CursoMainBundle:Default:delete }
+prueba_build:
+    path:  /build
+    defaults: { _controller: CursoMainBundle:Default:build }
+prueba_dql:
+    path:  /dql
+    defaults: { _controller: CursoMainBundle:Default:dql }

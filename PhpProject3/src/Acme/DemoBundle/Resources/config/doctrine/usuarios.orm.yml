@@ -1,0 +1,20 @@
+Acme\DemoBundle\Entity\usuarios:
+    type: entity
+    table: null
+    repositoryClass: Acme\DemoBundle\Entity\usuariosRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: '100'
+        correo:
+            type: string
+            length: '100'
+        pass:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }
