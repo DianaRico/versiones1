@@ -1,1 +1,1 @@
-control de acceso del  sistema
+control de acceso del  sistema compartido
